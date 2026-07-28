@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shad Fitness</title>
+
+    <meta name="theme-color" content="#0A84FF">
+
+    <meta name="description"
+          content="Application de sport Shad Fitness">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <script src="https://kit.fontawesome.com/6b0c65c4f5.js"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="background">
+
+<div class="gradient"></div>
+
+<div class="blur blur1"></div>
+
+<div class="blur blur2"></div>
+
+<div class="particles"></div>
+
+</div>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-dumbbell"></i>
+
+<span>Shad Fitness</span>
+
+</div>
+
+<div class="profile">
+
+<img src="assets/profile.png"
+     alt="Profil">
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<h1>
+
+Bonjour Shad 👋
+
+</h1>
+
+<p>
+
+Objectif :
+<strong>Abdos visibles</strong>
+
+</p>
+
+<div class="hero-buttons">
+
+<button id="startWorkout">
+
+<i class="fa-solid fa-play"></i>
+
+Commencer
+
+</button>
+
+<button id="statsButton">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Statistiques
+
+</button>
+
+</div>
+
+</section>
+
+<section class="dashboard">
+
+<div class="glass-card">
+
+<div class="card-title">
+
+🔥 Série actuelle
+
+</div>
+
+<div class="card-value">
+
+0 jour
+
+</div>
+
+<div class="card-icon">
+    <i class="fa-solid fa-fire"></i>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<div class="card-title">
+
+🏋️ Séances
+
+</div>
+
+<div class="card-value">
+
+0
+
+</div>
+
+<div class="card-icon">
+
+<i class="fa-solid fa-dumbbell"></i>
+
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<div class="card-title">
+
+⏱ Temps total
+
+</div>
+
+<div class="card-value">
+
+0 h
+
+</div>
+
+<div class="card-icon">
+
+<i class="fa-solid fa-clock"></i>
+
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<div class="card-title">
+
+🎯 Niveau
+
+</div>
+
+<div class="card-value">
+
+Débutant
+
+</div>
+
+<div class="card-icon">
+
+<i class="fa-solid fa-medal"></i>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="quote-section">
+
+<div class="glass-card">
+
+<h2>
+
+Citation du jour
+
+</h2>
+
+<p id="dailyQuote">
+
+Les résultats viennent de la régularité, pas de la perfection.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="quick-access">
+
+<h2>
+
+Accès rapide
+
+</h2>
+
+<div class="quick-grid">
+
+<div class="quick-card">
+
+<i class="fa-solid fa-person-running"></i>
+
+<span>Entraînement</span>
+
+</div>
+
+<div class="quick-card">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+<span>Progression</span>
+
+</div>
+
+<div class="quick-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<span>Calendrier</span>
+
+</div>
+
+<div class="quick-card">
+
+<i class="fa-solid fa-utensils"></i>
+
+<span>Nutrition</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="weekly-goal">
+
+    <div class="glass-card">
+
+        <h2>
+
+            Objectif de la semaine
+
+        </h2>
+
+        <p>
+
+            Effectuer 4 séances cette semaine
+
+        </p>
+
+        <div class="goal-progress">
+
+            <div class="goal-bar">
+
+                <div class="goal-fill"></div>
+
+            </div>
+
+            <span>0 / 4 séances</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="challenge">
+
+    <div class="glass-card">
+
+        <h2>
+
+            Défi du jour 🔥
+
+        </h2>
+
+        <h3>
+
+            100 Crunchs
+
+        </h3>
+
+        <p>
+
+            Récompense :
+            +50 XP
+
+        </p>
+
+        <button class="challenge-button">
+
+            Commencer
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="motivation">
+
+    <h2>
+
+        Continue comme ça 💪
+
+    </h2>
+
+    <div class="motivation-grid">
+
+        <div class="motivation-card">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h3>
+
+                Santé
+
+            </h3>
+
+            <p>
+
+                Ton corps devient plus fort chaque jour.
+
+            </p>
+
+        </div>
+
+        <div class="motivation-card">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>
+
+                Énergie
+
+            </h3>
+
+            <p>
+
+                Une séance aujourd'hui est un progrès demain.
+
+            </p>
+
+        </div>
+
+        <div class="motivation-card">
+
+            <i class="fa-solid fa-fire"></i>
+
+            <h3>
+
+                Motivation
+
+            </h3>
+
+            <p>
+
+                Ne casse pas ta série de jours.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bottom-navigation">
+
+    <a class="nav-item active">
+
+        <i class="fa-solid fa-house"></i>
+
+        <span>
+
+            Accueil
+
+        </span>
+
+    </a>
+
+    <a class="nav-item">
+
+        <i class="fa-solid fa-dumbbell"></i>
+
+        <span>
+
+            Sport
+
+        </span>
+
+    </a>
+
+    <a class="nav-item">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <span>
+
+            Progression
+
+        </span>
+
+    </a>
+
+    <a class="nav-item">
+
+        <i class="fa-solid fa-user"></i>
+
+        <span>
+
+            Profil
+
+        </span>
+
+    </a>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
